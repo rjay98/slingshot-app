@@ -1,15 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class HomeScreen extends React.Component {
+export default class DiscoverScreen extends React.Component {
   static navigationOptions = {
-    title: 'Home',
+    title: 'Discover',
     headerLeft: null,
   }
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Home</Text>
+        <Text style={styles.title}>Discover</Text>
       </View>
     );
   }

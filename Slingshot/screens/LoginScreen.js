@@ -6,6 +6,9 @@ export default class LoginScreen extends React.Component {
   static navigationOptions = {
     header: null
   };
+  static navigatorOptions = {
+    tabBarHidden: true
+  };
   render() {
     const { navigate } = this.props.navigation;
     return (
