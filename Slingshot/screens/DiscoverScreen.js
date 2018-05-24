@@ -3,9 +3,9 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default class DiscoverScreen extends React.Component {
   static navigationOptions = {
-    title: 'Discover',
-    headerLeft: null,
-  }
+    header: null
+  };
+
   render() {
     return (
       <View style={styles.container}>
