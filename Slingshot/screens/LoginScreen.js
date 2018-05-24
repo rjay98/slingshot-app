@@ -26,6 +26,7 @@ export default class LoginScreen extends React.Component {
           />
           <Button
             title='Login'
+            icon={{name: 'sign-in', type: 'font-awesome'}}
             onPress={() => navigate('Home')}
             buttonStyle={styles.loginButton}
             titleStyle={styles.loginTitle}

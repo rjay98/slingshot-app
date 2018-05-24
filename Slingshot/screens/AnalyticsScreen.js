@@ -30,9 +30,12 @@ const styles = StyleSheet.create({
   },
   titleContainer: {
     height: 100,
-    backgroundColor: '#fff',
+    backgroundColor: '#1976d2',
     alignItems: 'center',
     justifyContent: 'center',
+    shadowColor: 'black',
+    shadowOpacity: 0.1,
+    shadowOffset: { height: 2 }
   },
   contentContainer: {
     height: '100%',
@@ -41,6 +44,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start'
   },
   title: {
+    color: '#fff',
     marginTop: 30,
     fontSize: 25,
   }
