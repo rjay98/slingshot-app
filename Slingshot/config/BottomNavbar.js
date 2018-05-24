@@ -4,13 +4,13 @@ import { createBottomTabNavigator } from 'react-navigation';
 
 import HomeNav from './HomeNav';
 import ProfileScreen from '../screens/ProfileScreen';
-import DiscoverScreen from '../screens/DiscoverScreen';
+import DiscoverNav from './DiscoverNav';
 
 export default createBottomTabNavigator(
   {
     Home: {screen: HomeNav},
     Profile: {screen: ProfileScreen},
-    Discover: {screen: DiscoverScreen}
+    Discover: {screen: DiscoverNav}
   },
   {
     navigationOptions: ({ navigation }) => ({
