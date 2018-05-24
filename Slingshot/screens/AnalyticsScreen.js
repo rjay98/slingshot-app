@@ -11,10 +11,9 @@ export default class HomeScreen extends React.Component {
     return (
       <View styles={styles.container}>
         <View style={styles.titleContainer}>
-          <Text style={styles.title}>Home</Text>
+          <Text style={styles.title}>Analytics</Text>
         </View>
         <View style={styles.contentContainer}>
-          <Portfolio navigation={this.props.navigation}/>
         </View>
       </View>
     );
