@@ -21,12 +21,12 @@ export default class Portfolio extends React.Component {
           <Text style={styles.value}>19,300%</Text>
         </Card>
         <Button
-          title="Analytics" 
-          onPress={() => navigate('Analytics')}
+          title="Investments" 
+          onPress={() => navigate('Investments')}
           buttonStyle={styles.button}
           titleStyle={styles.title}
           raised={true}
-          icon={{name: 'bar-chart', type: 'font-awesome'}}
+          icon={{name: 'finance', type: 'material-community'}}
         />
       </View>
     )
