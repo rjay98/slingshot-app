@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Button, FormLabel, FormInput, FormValidationMessage } from 'react-native-elements';
+import { Button, FormLabel, FormInput, FormValidationMessage, SocialIcon } from 'react-native-elements';
 
 export default class LoginScreen extends React.Component {
   static navigationOptions = {
@@ -13,6 +13,18 @@ export default class LoginScreen extends React.Component {
       <View style={styles.container}>
         <Text style={styles.title}>Slingshot</Text>
         <View style={styles.formContainer}>
+          <SocialIcon
+            style={{ width: 350 }}
+            title='Sign In With Facebook'
+            button
+            type='facebook'
+          />
+          <SocialIcon
+            style={{ width: 350 }}
+            title="Sign In With Twitter"
+            button
+            type='twitter'
+          />
           <FormLabel>Username</FormLabel>
           <FormInput
             containerStyle={{ width: '90%' }}
@@ -26,6 +38,7 @@ export default class LoginScreen extends React.Component {
           />
           <Button
             title='Login'
+            icon={{name: 'sign-in', type: 'font-awesome'}}
             onPress={() => navigate('Home')}
             buttonStyle={styles.loginButton}
             titleStyle={styles.loginTitle}
@@ -48,8 +61,8 @@ const styles = StyleSheet.create({
     fontSize: 30,
   },
   formContainer: {
+    width: '100%',
     marginTop: 15,
-    width: 350,
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: 20,
@@ -57,7 +70,7 @@ const styles = StyleSheet.create({
   inputStyle: {
   },
   loginButton: {
-    width: '100%',
+    width: 350,
     marginTop: 20,
     backgroundColor: '#2196f3'
   },
