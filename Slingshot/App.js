@@ -1,14 +1,11 @@
 import React from 'react';
 import { createStackNavigator } from 'react-navigation';
-import HomeScreen from './screens/HomeScreen.js';
-import LoginScreen from './screens/LoginScreen.js';
 
-const App = createStackNavigator(
-  {
+import LoginScreen from './screens/LoginScreen';
+import BottomNavbar from './config/BottomNavbar';
+
+export default createStackNavigator({
     Login: {screen: LoginScreen},
-    Home: {screen: HomeScreen},
-  },
-  { mode: 'modal' }
+    userVerified: {screen: BottomNavbar}
+  }
 );
-
-export default App;
