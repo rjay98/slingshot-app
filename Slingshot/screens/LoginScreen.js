@@ -6,9 +6,7 @@ export default class LoginScreen extends React.Component {
   static navigationOptions = {
     header: null
   };
-  static navigatorOptions = {
-    tabBarHidden: true
-  };
+
   render() {
     const { navigate } = this.props.navigation;
     return (
@@ -16,17 +14,22 @@ export default class LoginScreen extends React.Component {
         <Text style={styles.title}>Slingshot</Text>
         <View style={styles.formContainer}>
           <FormLabel>Username</FormLabel>
-          <FormInput inputStyle={styles.inputStyle}/>
+          <FormInput
+            containerStyle={{ width: '90%' }}
+            inputStyle={styles.inputStyle}
+          />
           <FormLabel>Password</FormLabel>
           <FormInput
+            containerStyle={{ width: '90%' }}
             inputStyle={styles.inputStyle}
             secureTextEntry={true}
           />
-          <Button 
+          <Button
             title='Login'
             onPress={() => navigate('Home')}
             buttonStyle={styles.loginButton}
             titleStyle={styles.loginTitle}
+            raised={true}
           />
         </View>
       </View>
@@ -37,6 +40,7 @@ export default class LoginScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -45,18 +49,16 @@ const styles = StyleSheet.create({
   },
   formContainer: {
     marginTop: 15,
-    backgroundColor: '#fff',
+    width: 350,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 20
+    paddingVertical: 20,
   },
   inputStyle: {
-    flexDirection: 'row',
   },
   loginButton: {
+    width: '100%',
     marginTop: 20,
-    width: 200,
-    height: 46,
     backgroundColor: '#2196f3'
   },
   loginTitle: {
