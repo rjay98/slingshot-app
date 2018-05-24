@@ -7,5 +7,8 @@ import BottomNavbar from './config/BottomNavbar';
 export default createStackNavigator({
     Login: {screen: LoginScreen},
     userVerified: {screen: BottomNavbar}
-  }
+  },
+  { 
+    headerMode: 'none'
+  },
 );

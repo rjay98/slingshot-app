@@ -1,32 +1,48 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Button, FormLabel, FormInput, FormValidationMessage } from 'react-native-elements';
+import { Button, FormLabel, FormInput, FormValidationMessage, SocialIcon } from 'react-native-elements';
 
 export default class LoginScreen extends React.Component {
   static navigationOptions = {
     header: null
   };
-  static navigatorOptions = {
-    tabBarHidden: true
-  };
+
   render() {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Slingshot</Text>
         <View style={styles.formContainer}>
+          <SocialIcon
+            style={{ width: 350 }}
+            title='Sign In With Facebook'
+            button
+            type='facebook'
+          />
+          <SocialIcon
+            style={{ width: 350 }}
+            title="Sign In With Twitter"
+            button
+            type='twitter'
+          />
           <FormLabel>Username</FormLabel>
-          <FormInput inputStyle={styles.inputStyle}/>
+          <FormInput
+            containerStyle={{ width: '90%' }}
+            inputStyle={styles.inputStyle}
+          />
           <FormLabel>Password</FormLabel>
           <FormInput
+            containerStyle={{ width: '90%' }}
             inputStyle={styles.inputStyle}
             secureTextEntry={true}
           />
-          <Button 
+          <Button
             title='Login'
+            icon={{name: 'sign-in', type: 'font-awesome'}}
             onPress={() => navigate('Home')}
             buttonStyle={styles.loginButton}
             titleStyle={styles.loginTitle}
+            raised={true}
           />
         </View>
       </View>
@@ -45,19 +61,17 @@ const styles = StyleSheet.create({
     fontSize: 30,
   },
   formContainer: {
+    width: '100%',
     marginTop: 15,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 20
+    paddingVertical: 20,
   },
   inputStyle: {
-    flexDirection: 'row',
   },
   loginButton: {
+    width: 350,
     marginTop: 20,
-    width: 200,
-    height: 46,
     backgroundColor: '#2196f3'
   },
   loginTitle: {
