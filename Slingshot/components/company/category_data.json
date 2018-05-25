@@ -4,7 +4,7 @@
         {
             "name": "Capital Two",
             "id": "123456",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque massa tortor, id varius orci fermentum nec. Suspendisse congue elementum quam, sed lacinia dui sodales sed.",
+            "description": "The next big bank: Kill Banking for Good",
             "price": 30,
             "totalShares": 10000,
             "sharesAvailable": 6000,
@@ -15,7 +15,7 @@
             {
                 "name": "Pineapple",
                 "id": "134567",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque massa tortor, id varius orci fermentum nec. Suspendisse congue elementum quam, sed lacinia dui sodales sed.",
+                "description": "Think the Same",
                 "price": 20,
                 "totalShares": 7000,
                 "sharesAvailable": 50,
@@ -24,7 +24,7 @@
         {
             "name": "Yeehaw",
             "id": "145678",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque massa tortor, id varius orci fermentum nec. Suspendisse congue elementum quam, sed lacinia dui sodales sed.",
+            "description": "Do you Yeehaw?",
             "price": 25,
             "totalShares": 5000,
             "sharesAvailable": 20,
@@ -33,7 +33,7 @@
         {
             "name": "HuluHoop",
             "id": "156789",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque massa tortor, id varius orci fermentum nec. Suspendisse congue elementum quam, sed lacinia dui sodales sed.",
+            "description": "Nowhere, No Time",
             "price": 50,
             "totalShares": 6500,
             "sharesAvailable": 1000,
@@ -42,7 +42,7 @@
         {
             "name": "Tech2Death",
             "id": "256789",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque massa tortor, id varius orci fermentum nec. Suspendisse congue elementum quam, sed lacinia dui sodales sed.",
+            "description": "Tech till you Wreck",
             "price": 32,
             "totalShares": 5000,
             "sharesAvailable": 50,
@@ -53,7 +53,7 @@
         {
             "name": "Bori's Soccer Emporium",
             "id": "167890",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque massa tortor, id varius orci fermentum nec. Suspendisse congue elementum quam, sed lacinia dui sodales sed.",
+            "description": "I am good at soccer",
             "price": 14,
             "totalShares": 1000,
             "sharesAvailable": 50,
@@ -62,7 +62,7 @@
         {
             "name": "Valentino Bowling",
             "id": "234567",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque massa tortor, id varius orci fermentum nec. Suspendisse congue elementum quam, sed lacinia dui sodales sed.",
+            "description": "I'm the best",
             "price": 24,
             "totalShares": 3000,
             "sharesAvailable": 20,
@@ -73,7 +73,7 @@
         {
             "name": "Sarah & Lauren's Bake Shop",
             "id": "245678",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque massa tortor, id varius orci fermentum nec. Suspendisse congue elementum quam, sed lacinia dui sodales sed.",
+            "description": "The Sweets That Can't Be Beat",
             "price": 25,
             "totalShares": 1000,
             "sharesAvailable": 30,
@@ -84,7 +84,7 @@
         {
             "name": "Paper Clips",
             "id": "267890",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque massa tortor, id varius orci fermentum nec. Suspendisse congue elementum quam, sed lacinia dui sodales sed.",
+            "description": "That wasn't easy",
             "price": 34,
             "totalShares": 2000,
             "sharesAvailable": 100,
@@ -95,7 +95,7 @@
         {
             "name": "NOVAShop",
             "id": "345678",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque massa tortor, id varius orci fermentum nec. Suspendisse congue elementum quam, sed lacinia dui sodales sed.",
+            "description": "The Best Place to Shop in Northern Virginia",
             "price": 30,
             "totalShares": 5000,
             "sharesAvailable": 450,
@@ -106,7 +106,7 @@
         {
             "name": "Shane Games",
             "id": "345678",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque massa tortor, id varius orci fermentum nec. Suspendisse congue elementum quam, sed lacinia dui sodales sed.",
+            "description": "We're Not That Great, But We'll Get The Job Done",
             "price": 5,
             "totalShares": 5000,
             "sharesAvailable": 450,
@@ -117,7 +117,7 @@
         {
             "name": "TechEd",
             "id": "356789",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque massa tortor, id varius orci fermentum nec. Suspendisse congue elementum quam, sed lacinia dui sodales sed.",
+            "description": "Teaching the Next Generation",
             "price": 15,
             "totalShares": 4000,
             "sharesAvailable": 50,

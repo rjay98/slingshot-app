@@ -8,6 +8,7 @@ export default class CompanyCard extends React.Component {
         const { Education } = data;
         return (
             <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'flex-start'}}>
+            <Text>E-Commerce</Text>
             <ScrollView>
                 { Education.map(element => {
                     return (

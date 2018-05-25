@@ -8,6 +8,9 @@ export default class CompanyCard extends React.Component {
         const { Ecommerce } = data;
         return (
             <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'flex-start'}}>
+            <View style={styles.titleContainer}>
+                <Text style={styles.title}>E-Commerce</Text>
+            </View>
             <ScrollView>
                 { Ecommerce.map(element => {
                     return (
@@ -30,5 +33,23 @@ export default class CompanyCard extends React.Component {
             </View>
         )
     }
-    
 }
+
+    const styles = StyleSheet.create({
+        titleContainer: {
+            height: 100,
+            backgroundColor: '#1976d2',
+            alignItems: 'center',
+            justifyContent: 'center',
+            shadowColor: 'black',
+            shadowOpacity: 0.1,
+            shadowOffset: { height: 2 }
+          },
+          title: {
+            color: '#fff',
+            marginTop: 30,
+            fontSize: 25,
+          }
+    });
+    
+
