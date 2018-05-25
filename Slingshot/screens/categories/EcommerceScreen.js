@@ -23,7 +23,7 @@ export default class CompanyCard extends React.Component {
     }
 }
 
-const styles = {
+const styles = StyleSheet.create({
     titleContainer: {
         height: 100,
         backgroundColor: '#1976d2',
@@ -32,10 +32,11 @@ const styles = {
         shadowColor: 'black',
         shadowOpacity: 0.1,
         shadowOffset: { height: 2 }
-    },
-    title: {
-    color: '#fff',
-    marginTop: 30,
-    fontSize: 25,
-    }
-}
+        },
+        title: {
+        color: '#fff',
+        marginTop: 30,
+        fontSize: 25,
+        }
+});
+
