@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Image } from 'react-native';
 import { Card, ListItem, Button, Icon } from 'react-native-elements';
 import Category from '../components/company/category';
 
@@ -12,9 +12,13 @@ export default class DiscoverScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Discover</Text>
-        <Text style={styles.company}>Company Cards</Text>
-        <Category navigation={this.props.navigation} />
+        <View style={styles.titleContainer}>
+          <Text style={styles.title}>Discover</Text>
+        </View>
+        <ScrollView>
+          <Text style={styles.subtitle}>Industries</Text>
+          <Category navigation={this.props.navigation} />
+        </ScrollView>
       </View>
     );
   }
@@ -24,19 +28,31 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    // alignItems: 'center',
-    // justifyContent: 'center',
+  },
+  titleContainer: {
+    height: 100,
+    backgroundColor: '#1976d2',
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: 'black',
+    shadowOpacity: 0.1,
+    shadowOffset: { height: 2 }
+  },
+  contentContainer: {
+    height: '100%',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'flex-start'
   },
   title: {
-    fontSize: 30,
-    textAlign: 'left',
-    textAlignVertical: 'top',
-    margin: 10,
+    color: '#fff',
+    marginTop: 30,
+    fontSize: 25,
   },
-  company: {
-    fontSize: 20,
-    textAlign: 'left',
-    paddingTop: 5,
-    paddingLeft: 10,
+  subtitle: {
+    color: '#888',
+    textAlign: 'center',
+    fontSize: 22,
+    marginTop: 15
   }
 });

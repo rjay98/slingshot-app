@@ -15,7 +15,7 @@ export default createStackNavigator({
     Category: {screen: CategoryScreen},
     Finance: {screen: FinanceScreen},
     Technology: {screen: TechnologyScreen},
-    Ecommerce: {screen: EcommerceScreen},
+    ECommerce: {screen: EcommerceScreen},
     Education: {screen: EducationScreen},
     Entertainment: {screen: EntertainmentScreen},
     Food: {screen: FoodScreen},

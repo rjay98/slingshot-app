@@ -20,8 +20,10 @@ export default class Investments extends React.Component {
         <Card>
           <SearchBar
             lightTheme
-            containerStyle={{ backgroundColor: '#fff', borderColor: '#fff' }}
-            placeholder='Search Investments...' />
+            inputStyle={{ backgroundColor: 'white' }}
+            containerStyle={{ backgroundColor: 'white', borderColor: 'white' }}
+            placeholder='Search Investments...'
+          />
         </Card>
         <StockData name="Rori's Soccer" price="6823.24" quantity="20"/>
         <StockData name="CanadaExpress (CNEX)" price="273.54" quantity="2"/>
