@@ -25,9 +25,9 @@ export default class PersonalScreen extends React.Component {
           />
           <View style={{ width: 300, backgroundColor: '#fff', paddingVertical: 30 }}>
             <FormLabel>First Name</FormLabel>
-            <FormInput value='Mary' containerStyle={{ width: "75%" }}/>
+            <FormInput value='John' containerStyle={{ width: "75%" }}/>
             <FormLabel>Last Name</FormLabel>
-            <FormInput value='Jane' containerStyle={{ width: "75%" }}/>
+            <FormInput value='Smith' containerStyle={{ width: "75%" }}/>
             <FormLabel>Phone Number</FormLabel>
             <FormInput value='(012) 345 - 6789' containerStyle={{ width: "75%" }}/>
           </View>
