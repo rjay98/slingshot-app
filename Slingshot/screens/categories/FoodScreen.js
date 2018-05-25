@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, Image } from 'react-native';
 import { Card, ListItem, Button, Icon } from 'react-native-elements';
-import { StockData } from '../../components/investments/stockData';
+import StockData from '../../components/investments/stockData';
 import data from '../../components/company/category_data.json';
 
 export default class CompanyCard extends React.Component {

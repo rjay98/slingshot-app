@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { Card, Button, Icon, SearchBar } from 'react-native-elements';
-import { StockData } from './stockData';
+import StockData from './stockData';
 
 export default class Investments extends React.Component {
   render() {
@@ -25,7 +25,7 @@ export default class Investments extends React.Component {
             placeholder='Search Investments...'
           />
         </Card>
-        <StockData name="Rori's Soccer" price="6823.24" quantity="20"/>
+        <StockData name="Bori's Soccer (BS)" price="6823.24" quantity="20"/>
         <StockData name="CanadaExpress (CNEX)" price="273.54" quantity="2"/>
         <StockData name="CapitalTwo (CT)" price="392.02" quantity="50"/>
       </View>
