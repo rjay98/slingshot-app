@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, Image } from 'react-native';
 import { Card, ListItem, Button, Icon } from 'react-native-elements';
+import { StockData } from '../../components/investments/stockData';
 import data from '../../components/company/category_data.json';
 
 export default class CompanyCard extends React.Component {
@@ -8,27 +9,32 @@ export default class CompanyCard extends React.Component {
         const { Gaming } = data;
         return (
             <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'flex-start'}}>
-            <ScrollView>
-                { Gaming.map(element => {
-                    return (
-                    <View key={element}>
-                        <Card 
-                        title={element.name}
-                        >
-                            <Text style={{marginBottom: 10}}>
-                            {element.description}
-                            </Text>
-                            <Button
-                            backgroundColor='#03A9F4'
-                            //fontFamily='Lato'
-                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                            title='VIEW NOW' />
-                        </Card>
-                    </View>
-                )})}
+                <View style={styles.titleContainer}>
+                    <Text style={styles.title}>Gaming</Text>
+                </View>
+                <ScrollView>
+                    { Gaming.map(element => {
+                        return (
+                            <StockData key={element.name} name={element.name} price={element.price} stockOwned={false}/>
+                    )})}
                 </ScrollView>
             </View>
         )
     }
-    
+}
+const styles = {
+    titleContainer: {
+        height: 100,
+        backgroundColor: '#1976d2',
+        alignItems: 'center',
+        justifyContent: 'center',
+        shadowColor: 'black',
+        shadowOpacity: 0.1,
+        shadowOffset: { height: 2 }
+    },
+    title: {
+    color: '#fff',
+    marginTop: 30,
+    fontSize: 25,
+    }
 }
