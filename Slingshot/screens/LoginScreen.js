@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image} from 'react-native';
 import { Button, FormLabel, FormInput, FormValidationMessage, SocialIcon } from 'react-native-elements';
+import SvgUri from 'react-native-svg-uri';
 
 export default class LoginScreen extends React.Component {
   static navigationOptions = {
@@ -11,6 +12,12 @@ export default class LoginScreen extends React.Component {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
+        <View style={{}}>
+          <Image
+            style={{ width: 125, height: 125 }}
+            source={require('../static/img/slingshot.png')}
+          />
+        </View>
         <Text style={styles.title}>Slingshot</Text>
         <View style={styles.formContainer}>
           <SocialIcon
