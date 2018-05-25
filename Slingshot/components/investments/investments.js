@@ -1,25 +1,14 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { Card, Button } from 'react-native-elements';
+import { Card, Button, Icon, SearchBar } from 'react-native-elements';
+import StockData from './stockData';
 
-export default class Portfolio extends React.Component {
+export default class Investments extends React.Component {
   render() {
     const { navigate } = this.props.navigation;
 
     return (
       <View style={styles.wrapper}>
-        <Card title='Portfolio Value'>
-          <Text style={styles.value}>123,035.23 USD</Text>
-        </Card>
-        <Card title='Available Funds'>
-          <Text style={styles.value}>473.74 USD</Text>
-        </Card>
-        <Card title='Invested'>
-          <Text style={styles.value}>6374.88 USD</Text>
-        </Card>
-        <Card title='Return on Interest (ROI)'>
-          <Text style={styles.value}>19,300%</Text>
-        </Card>
         <Button
           title="Analytics" 
           onPress={() => navigate('Analytics')}
@@ -28,6 +17,17 @@ export default class Portfolio extends React.Component {
           raised={true}
           icon={{name: 'bar-chart', type: 'font-awesome'}}
         />
+        <Card>
+          <SearchBar
+            lightTheme
+            inputStyle={{ backgroundColor: 'white' }}
+            containerStyle={{ backgroundColor: 'white', borderColor: 'white' }}
+            placeholder='Search Investments...'
+          />
+        </Card>
+        <StockData name="Bori's Soccer (BS)" price="6823.24" quantity="20"/>
+        <StockData name="CanadaExpress (CNEX)" price="273.54" quantity="2"/>
+        <StockData name="CapitalTwo (CT)" price="392.02" quantity="50"/>
       </View>
     )
   }
@@ -36,9 +36,13 @@ export default class Portfolio extends React.Component {
 const styles = {
   wrapper: {
     width: 370,
-    height: 240,
     justifyContent: 'flex-start',
     alignContent: 'center',
+    marginBottom: 200
+  },
+  valueLabel: {
+    color: '#777',
+    textAlign: 'center'
   },
   value: {
     color: '#0069c0',
@@ -62,5 +66,8 @@ const styles = {
     lineHeight: 40,
     color: '#fff',
     fontSize: 20
+  },
+  buttonTitle: {
+    color: '#fff'
   }
 }

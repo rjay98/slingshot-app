@@ -3,14 +3,14 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import { createBottomTabNavigator } from 'react-navigation';
 
 import HomeNav from './HomeNav';
-import ProfileScreen from '../screens/ProfileScreen';
-import DiscoverScreen from '../screens/DiscoverScreen';
+import DiscoverNav from './DiscoverNav';
+import ProfileNav from './ProfileNav';
 
 export default createBottomTabNavigator(
   {
     Home: {screen: HomeNav},
-    Profile: {screen: ProfileScreen},
-    Discover: {screen: DiscoverScreen}
+    Discover: {screen: DiscoverNav},
+    Profile: {screen: ProfileNav},
   },
   {
     navigationOptions: ({ navigation }) => ({

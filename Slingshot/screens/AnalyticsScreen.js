@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Portfolio from '../components/analytics/portfolio';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import Analytics from '../components/investments/analytics';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -13,8 +13,11 @@ export default class HomeScreen extends React.Component {
         <View style={styles.titleContainer}>
           <Text style={styles.title}>Analytics</Text>
         </View>
-        <View style={styles.contentContainer}>
-        </View>
+        <ScrollView style={{ height: '100%' }}>
+          <View style={styles.contentContainer}>
+            <Analytics navigation={this.props.navigation}/>
+          </View>
+        </ScrollView>
       </View>
     );
   }
@@ -30,9 +33,12 @@ const styles = StyleSheet.create({
   },
   titleContainer: {
     height: 100,
-    backgroundColor: '#fff',
+    backgroundColor: '#1976d2',
     alignItems: 'center',
     justifyContent: 'center',
+    shadowColor: 'black',
+    shadowOpacity: 0.1,
+    shadowOffset: { height: 2 }
   },
   contentContainer: {
     height: '100%',
@@ -41,6 +47,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start'
   },
   title: {
+    color: '#fff',
     marginTop: 30,
     fontSize: 25,
   }

@@ -12,48 +12,32 @@ export default class ProfileScreen extends React.Component {
     return (
       <View styles={styles.container}>
         <View style={styles.titleContainer}>
-          <Text style={styles.title}>Profile</Text>
+          <Text style={styles.title}>Banking</Text>
         </View>
         <View style={styles.contentContainer}>
           <Button
-            title="Personal" 
-            onPress={() => navigate('Personal')}
+            title="Transfer to Slingshot" 
+            onPress={() => navigate('TransferToSlingshot')}
             buttonStyle={styles.button}
             titleStyle={styles.title}
             raised={true}
-            icon={{name: 'gear', type: 'font-awesome'}}
+            icon={{name: 'long-arrow-left', type: 'font-awesome'}}
           />
           <Button
-            title="Banking" 
-            onPress={() => navigate('Banking')}
+            title="Transfer to Bank Account" 
+            onPress={() => navigate('TransferToBank')}
             buttonStyle={styles.button}
             titleStyle={styles.title}
             raised={true}
-            icon={{name: 'bank', type: 'font-awesome'}}
+            icon={{name: 'long-arrow-right', type: 'font-awesome'}}
           />
           <Button
-            title="About" 
-            onPress={() => navigate('About')}
+            title="Add Account" 
+            onPress={() => navigate('About Us')}
             buttonStyle={styles.button}
             titleStyle={styles.title}
             raised={true}
-            icon={{name: 'question', type: 'font-awesome'}}
-          />
-          <Button
-            title="Legal" 
-            onPress={() => navigate('Legal')}
-            buttonStyle={styles.button}
-            titleStyle={styles.title}
-            raised={true}
-            icon={{name: 'file-text', type: 'font-awesome'}}
-          />
-          <Button
-            title="Logout" 
-            onPress={() => navigate('Login')}
-            buttonStyle={styles.button}
-            titleStyle={styles.buttonTitle}
-            raised={true}
-            icon={{name: 'sign-out', type: 'font-awesome'}}
+            icon={{name: 'library-add', type: 'material'}}
           />
         </View>
       </View>
@@ -93,7 +77,7 @@ const styles = StyleSheet.create({
     width: 300,
     height: 45,
     marginTop: 10,
-    backgroundColor: '#2196f3'
+    backgroundColor: '#ffa726'
   },
   buttonTitle: {
     lineHeight: 40,

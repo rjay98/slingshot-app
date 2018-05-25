@@ -1,0 +1,127 @@
+
+{
+    "Finance": [
+        {
+            "name": "Capital Two",
+            "id": "123456",
+            "description": "The next big bank: kill banking for good.",
+            "price": 30.11,
+            "totalShares": 10000,
+            "sharesAvailable": 6000,
+            "percent": 13
+        }
+    ],
+    "Technology":[
+            {
+                "name": "Pineapple",
+                "id": "134567",
+                "description": "Think the Same",
+                "price": 22.83,
+                "totalShares": 7000,
+                "sharesAvailable": 50,
+                "percent": 15
+            },
+        {
+            "name": "Yeehaw",
+            "id": "145678",
+            "description": "Do you Yeehaw?",
+            "price": 25.91,
+            "totalShares": 5000,
+            "sharesAvailable": 20,
+            "percent": 10
+        },
+        {
+            "name": "HuluHoop",
+            "id": "156789",
+            "description": "Nowhere, No Time.",
+            "price": 50.24,
+            "totalShares": 6500,
+            "sharesAvailable": 1000,
+            "percent": 5
+        },
+        {
+            "name": "Tech2Death",
+            "id": "256789",
+            "description": "Tech till you Wreck.",
+            "price": 32.24,
+            "totalShares": 5000,
+            "sharesAvailable": 50,
+            "percent": 3
+        }
+    ],
+    "Entertainment": [
+        {
+            "name": "Bori's Soccer Emporium",
+            "id": "167890",
+            "description": "I am good at soccer.",
+            "price": 14.00,
+            "totalShares": 1000,
+            "sharesAvailable": 50,
+            "percent": 5
+        },
+        {
+            "name": "Valentino Bowling",
+            "id": "234567",
+            "description": "I'm the best.",
+            "price": 24.73,
+            "totalShares": 3000,
+            "sharesAvailable": 20,
+            "percent": 7
+        }
+    ],
+    "Food": [
+        {
+            "name": "Sarah & Lauren's Bake Shop",
+            "id": "245678",
+            "description": "The Sweets That Can't Be Beat",
+            "price": 25.99,
+            "totalShares": 1000,
+            "sharesAvailable": 30,
+            "percent": 5
+        }
+    ],
+    "Merchandise": [
+        {
+            "name": "Paper Clips",
+            "id": "267890",
+            "description": "That wasn't easy",
+            "price": 34.93,
+            "totalShares": 2000,
+            "sharesAvailable": 100,
+            "percent": 5
+        }
+    ],
+    "ECommerce": [
+        {
+            "name": "NOVAShop",
+            "id": "345678",
+            "description": "The Best Place to Shop in Northern Virginia",
+            "price": 30.11,
+            "totalShares": 5000,
+            "sharesAvailable": 450,
+            "percent": 2
+        }
+    ],
+    "Gaming": [
+        {
+            "name": "Shane Games",
+            "id": "345678",
+            "description": "We're Not That Great, But We'll Get The Job Done",
+            "price": 5.03,
+            "totalShares": 5000,
+            "sharesAvailable": 450,
+            "percent": 1
+        }
+    ],
+    "Education": [
+        {
+            "name": "TechEd",
+            "id": "356789",
+            "description": "Teaching the Next Generation",
+            "price": 15.64,
+            "totalShares": 4000,
+            "sharesAvailable": 50,
+            "percent": 2
+        }
+    ]
+}

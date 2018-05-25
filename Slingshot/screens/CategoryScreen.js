@@ -1,22 +1,23 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
-import Portfolio from '../components/investments/portfolio';
+import { StyleSheet, Text, View, ScrollView, Image } from 'react-native';
+import { Card, ListItem, Button, Icon } from 'react-native-elements';
+import Category from '../components/company/category';
 
-export default class HomeScreen extends React.Component {
+export default class DiscoverScreen extends React.Component {
   static navigationOptions = {
-    header: null
-  };
+    title: 'Discover',
+    headerLeft: null,
+  }
 
   render() {
     return (
-      <View styles={styles.container}>
+      <View style={styles.container}>
         <View style={styles.titleContainer}>
-          <Text style={styles.title}>Home</Text>
+          <Text style={styles.title}>Discover</Text>
         </View>
-        <ScrollView style={{ height: '100%' }}>
-          <View style={styles.contentContainer}>
-            <Portfolio navigation={this.props.navigation}/>
-          </View>
+        <ScrollView>
+          <Text style={styles.subtitle}>Industries</Text>
+          <Category navigation={this.props.navigation} />
         </ScrollView>
       </View>
     );
@@ -26,10 +27,7 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   titleContainer: {
     height: 100,
@@ -50,5 +48,11 @@ const styles = StyleSheet.create({
     color: '#fff',
     marginTop: 30,
     fontSize: 25,
+  },
+  subtitle: {
+    color: '#888',
+    textAlign: 'center',
+    fontSize: 22,
+    marginTop: 15
   }
 });
